@@ -1,0 +1,29 @@
+//https://dimikoj.com/problems/31/perfect-number-2-by-dimik-computing
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio (0);
+    cin.tie (0);
+    cout.tie (0);
+    int t, i;
+    long long int n;
+    int ara[] = {6, 28, 496, 8128, 33550336};
+    cin >> t;
+    while (t--) {
+        cin >> n;
+        for (i = 0; i < 5; i++)
+            if (ara[i] <= n) {
+                cout << ara[i] << "\n";
+            }
+            else {
+                break;
+            }
+        if (t > 0) {
+            cout << "\n";
+        }
+    }
+    return 0;
+}
